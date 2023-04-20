@@ -1,0 +1,89 @@
+[
+{
+  "model": "accounts.account",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$fcEbqy2wh89S9zEwHA09et$EK132HVDW6nhCGHRZfKTzddx2wvkApO8YoPvKcRwr08=",
+    "last_login": "2023-03-28T12:32:59.930Z",
+    "is_superuser": false,
+    "username": "aida",
+    "first_name": "Аида",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-24T05:58:45.830Z",
+    "email": "aida@aida.com",
+    "avatar": "user_pic/ul6g48eb0lfa1.jpg.webp",
+    "phone": "+77471487070",
+    "description": "A Django library which interfaces with python-phonenumbers to validate, pretty print and convert phone numbers. The python-phonenumbers library is a port of Google’s libphonenumber library, which powers Android’s phone number handling.",
+    "gender": "F",
+    "groups": [],
+    "user_permissions": [],
+    "liked_posts": [],
+    "subscriptions": [],
+    "commented_posts": []
+  }
+},
+{
+  "model": "accounts.account",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$OvSThUL1hnCUWBiZyl798T$L92grkAcMDJX1uloPL7sxfwhB/g3P2aHt4JUuDC61cg=",
+    "last_login": "2023-03-28T12:33:57.161Z",
+    "is_superuser": false,
+    "username": "JDM_Cars",
+    "first_name": "arts",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-24T06:00:40.946Z",
+    "email": "jdm@jdm.com",
+    "avatar": "user_pic/wp9326700-itasha-wallpapers.jpg",
+    "phone": null,
+    "description": "Тоже мощный",
+    "gender": "M",
+    "groups": [],
+    "user_permissions": [],
+    "liked_posts": [
+      19,
+      20
+    ],
+    "subscriptions": [
+      [
+        "andrei@andrei.com"
+      ]
+    ],
+    "commented_posts": []
+  }
+},
+{
+  "model": "accounts.account",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$eFzdKtKhVKhl9egFF7J1DL$DDYV6D4VxsiAojhj1MpPzHlWqMcCMkC/WRfG163S2+Y=",
+    "last_login": "2023-03-28T12:31:29.696Z",
+    "is_superuser": false,
+    "username": "anime_wallpaper",
+    "first_name": "Андрей",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-24T06:52:39.630Z",
+    "email": "andrei@andrei.com",
+    "avatar": "user_pic/Снимок_экрана_2023-03-08_в_15.59.23_DkSA2qy.png",
+    "phone": "+77011118334",
+    "description": "Дед",
+    "gender": "M",
+    "groups": [],
+    "user_permissions": [],
+    "liked_posts": [
+      23,
+      20,
+      19,
+      18
+    ],
+    "subscriptions": [],
+    "commented_posts": []
+  }
+}
+]

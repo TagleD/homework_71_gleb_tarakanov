@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="posts-list">
+            <div class="row d-flex justify-content-center post-margin-top">
+                <div class="col-5 card text-bg-light form-margins">
+                    <div class="row">
+                        <h5 class="search-title">Выполните поиск по аккаунтам</h5>
+                        {% include 'partial/search.html' %}
+                    </div>
+                    {% for account in accounts %}
+                        <div class="row">
+                            <a href="{% url 'profile' account.pk %}" class="searched-accounts">
+                                <p><b>Username:</b> {{ account.username }}, <b>Email:</b> {{ account.email }},
+                                    <b>Имя:</b> {{ account.first_name }}</p>
+                            </a>
+                        </div>
+                    {% empty %}
+                        <h5>Аккаунтов по вашему запросу не найдено</h5>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

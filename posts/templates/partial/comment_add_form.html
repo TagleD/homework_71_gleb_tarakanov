@@ -1,0 +1,16 @@
+{% load django_bootstrap5 %}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form square-inputs">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-8 ">
+                {% bootstrap_field form.text show_label=False %}
+            </div>
+            <div class="col-4">
+                {% bootstrap_button button_type="submit" content='Опубликовать' button_class="btn btn-primary" %}
+            </div>
+        </div>
+
+    </div>
+</form>

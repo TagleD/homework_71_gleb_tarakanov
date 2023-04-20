@@ -1,0 +1,7 @@
+{% load django_bootstrap5 %}
+
+
+<form action="" method="get" class="d-flex search-form" role="search">
+    {% bootstrap_form form show_label=False %}
+    {% bootstrap_button button_type="submit" content='Найти' button_class="btn btn-outline-success search-button-accounts" %}
+</form>

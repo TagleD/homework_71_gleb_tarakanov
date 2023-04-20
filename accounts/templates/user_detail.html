@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}Аккаунт{% endblock %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="row d-flex justify-content-center post-margin-top">
+                <div class="col-9">
+                    <div class="row profile-margin-top">
+                        <div class="col-3">
+                            {% if user_obj.avatar %}
+                                <img src="{{ user_obj.avatar.url }}" class="profile-avatar" alt="Аватар">
+                            {% else %}
+                                <img src="{% static 'img/noname.jpeg' %}" class="profile-avatar" alt="Аватар">
+                            {% endif %}
+                        </div>
+                        <div class="col-8">
+                            <div class="row profile-info-margin">
+                                <div class="col-4">
+                                    <h5 class="profile-username">{{ user_obj.username }}</h5>
+                                </div>
+                                <div class="col-4 profile-edit-block">
+                                    {% if user_obj.pk == user.pk %}
+                                        <a href="{% url 'change' user_obj.pk %}" class="profile-link-edit">Редактировать
+                                            профиль</a>
+                                    {% elif subscribe %}
+                                        <a href="{% url 'unsubscribe' user_obj.pk %}" class="profile-link-edit">Отписаться</a>
+                                    {% else %}
+                                        <a href="{% url 'subscribe' user_obj.pk %}" class="profile-link-edit">Подписаться</a>
+                                    {% endif %}
+                                </div>
+                                <div class="col-2 profile-add-block">
+                                    <a href="{% url 'post_add' %}" class="profile-link-edit">+ Добавить</a>
+                                </div>
+                                <div class="col-2">
+                                    <a href="{% url 'logout' %}">Выйти</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <p><b>{{ posts_count }}</b> публикаций</p>
+                                </div>
+                                <div class="col-3"><b>{{ subscribers }}</b> подписчиков</div>
+                                <div class="col-3"><b>{{ subscriptions }}</b> подписок</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p><b>{{ user_obj.first_name }}</b></p>
+                                </div>
+                            </div>
+                            <div class="row profile-description">
+                                <div class="col-12">
+                                    <p>{{ user_obj.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% include 'partial/posts_list.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

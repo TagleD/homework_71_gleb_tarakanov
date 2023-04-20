@@ -1,0 +1,115 @@
+[
+{
+  "model": "posts.comment",
+  "pk": 13,
+  "fields": {
+    "author": 3,
+    "post": 20,
+    "text": "Вот так вот",
+    "is_deleted": false,
+    "created_at": "2023-03-28T12:23:42.754Z",
+    "updated_at": "2023-03-28T12:23:42.756Z"
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 14,
+  "fields": {
+    "author": 2,
+    "post": 19,
+    "text": "Хороший арт",
+    "is_deleted": false,
+    "created_at": "2023-03-28T12:25:12.601Z",
+    "updated_at": "2023-03-28T12:25:12.603Z"
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 15,
+  "fields": {
+    "author": 2,
+    "post": 19,
+    "text": "Ск ньте ссылку на оригинал",
+    "is_deleted": false,
+    "created_at": "2023-03-28T12:25:20.868Z",
+    "updated_at": "2023-03-28T12:25:20.869Z"
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 16,
+  "fields": {
+    "author": 2,
+    "post": 20,
+    "text": "Отличная цветовая палитра",
+    "is_deleted": false,
+    "created_at": "2023-03-28T12:25:43.599Z",
+    "updated_at": "2023-03-28T12:25:43.600Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 18,
+  "fields": {
+    "description": "Говоря о наиболее экстремальных проявлений JDM тюнинга, нельзя обойти стороной и такое его проявление, как Itasha. Этим словом обозначаются автомобили, чей кузов разрисован в стиле аниме и манги. Такж",
+    "image": "post_images/wp9326700-itasha-wallpapers.jpg",
+    "image_square": "post_images_square/wp9326700-itasha-wallpapers.jpg",
+    "author": 2,
+    "is_deleted": false,
+    "created_at": "2023-03-26T04:48:43.034Z",
+    "updated_at": "2023-03-26T04:48:43.086Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 19,
+  "fields": {
+    "description": "Onomichi [Original] [Scenery] (5120x3200)",
+    "image": "post_images/nuzx8ov1lvpa1.webp",
+    "image_square": "post_images_square/nuzx8ov1lvpa1.webp",
+    "author": 3,
+    "is_deleted": false,
+    "created_at": "2023-03-26T04:56:38.806Z",
+    "updated_at": "2023-03-26T04:56:38.840Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 20,
+  "fields": {
+    "description": "Lin with her new dress [Tower of fantasy] (4032x2268)",
+    "image": "post_images/qikfnl8munoa1.png",
+    "image_square": "post_images_square/qikfnl8munoa1.png",
+    "author": 3,
+    "is_deleted": false,
+    "created_at": "2023-03-26T05:01:04.620Z",
+    "updated_at": "2023-03-26T05:01:07.799Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 22,
+  "fields": {
+    "description": "Datsun Fairlady (яп. ダットサン・フェアレディ) — серия родстеров производства Nissan из 1960-х годов. Серия была предшественником Nissan Fairlady Z в линейке Fairlady, и конкурировала с европейскими спортивными а",
+    "image": "post_images/d30250cs-960.jpg",
+    "image_square": "post_images_square/d30250cs-960.jpg",
+    "author": 2,
+    "is_deleted": false,
+    "created_at": "2023-03-27T13:52:17.996Z",
+    "updated_at": "2023-03-27T13:52:18.017Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 23,
+  "fields": {
+    "description": "\"Driving Around\" Misato, Pen Pen, Asuka, Rei [Evangelion] (6720x2880)",
+    "image": "post_images/ol0svyx4zgqa1.webp",
+    "image_square": "post_images_square/ol0svyx4zgqa1.webp",
+    "author": 3,
+    "is_deleted": false,
+    "created_at": "2023-03-28T12:08:55.457Z",
+    "updated_at": "2023-03-28T12:08:55.500Z"
+  }
+}
+]

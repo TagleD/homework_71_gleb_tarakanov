@@ -1,0 +1,15 @@
+<div class="row profile-posts">
+    {% for post in posts %}
+        <div class="col-4">
+            <div class="profile-post-image">
+                {% if post.image_square %}
+                    <a href="{% url 'post_detail' post.pk %}">
+                        <img src="{{ post.image_square.url }}" width="300px" height="300px">
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    {% empty %}
+        <h2 class="text-center">Нет постов</h2>
+    {% endfor %}
+</div>

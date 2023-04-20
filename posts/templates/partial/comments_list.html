@@ -1,0 +1,20 @@
+{% load static %}
+
+{% if post.comments.all %}
+    <h6 class="comments-block-title">Комментарии ({{ comments_number }})</h6>
+    {% for comment in post.comments.all %}
+        <div class="row">
+            <div class="col-11">
+                <a href="{% url 'profile' comment.author.pk %}" class="comment-username">
+                    <p class="">{{ comment.author.username }}</p>
+                </a>
+            </div>
+            <div class="col-12">
+                <p class="comment-text">{{ comment.text }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <h6 class="comments-block-title">Нет комментариев</h6>
+{% endif %}
+

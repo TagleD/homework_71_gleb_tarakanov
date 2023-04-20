@@ -1,0 +1,296 @@
+
+.login-align {
+    vertical-align: middle;
+}
+
+.login-card {
+    padding-top: 41px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 19px;
+}
+
+.login-check-user, .login-card, .down-register-card {
+    border-radius: 0px;
+    max-width: 405px;
+}
+
+.login-check-user {
+    text-align: center;
+    margin-top: 16px;
+    padding-top: 17px;
+    padding-bottom: 12px;
+}
+
+.register-url {
+    text-decoration: none;
+}
+
+.display-full-size {
+    height: 100%;
+}
+
+.login-register-button {
+    width: 315px;
+    background: #3c95f6;
+    border-color: #3c95f6;
+    border-radius: 10px;
+}
+
+.register-text {
+    color: #8e8e8e;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    margin: 15px 0px 23px 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.square-inputs > input {
+    border-radius: 0px;
+}
+
+.account-question {
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+
+.down-register-card {
+    margin-top: 16px;
+}
+
+/*.logo-left {*/
+/*    margin-left: 250px;*/
+/*    margin-top: 6px;*/
+/*    margin-right: 15px;*/
+/*}*/
+
+/*.navbar-text-logo {*/
+/*    margin-left: 3px;*/
+/*    margin-top: 4px;*/
+/*}*/
+
+/*.log-ili {*/
+/*    font-size: 30px;*/
+/*    margin-top: 10px;*/
+/*    margin-left: 9px;*/
+/*}*/
+
+.logo {
+    margin-top: 10px;
+}
+
+.text-logo {
+    margin-top: 4px;
+    margin-left: 18px;
+}
+
+.form-control::placeholder {
+    text-align: center;
+}
+
+/* Стили для создания разноцветного бордера с плавным переходом цветов */
+/* Стили для создания рамки вокруг элемента с изображением */
+.instagram-border {
+    border-radius: 50%;
+    border: 10px solid transparent;
+    -webkit-border-image: url("https://insgrammar.com/wp-content/uploads/instagram_gradient.png") 30 round; /* для браузеров, использующих WebKit */
+    -o-border-image: url("https://insgrammar.com/wp-content/uploads/instagram_gradient.png") 30 round; /* для браузеров, использующих Opera */
+    border-image: url("https://insgrammar.com/wp-content/uploads/instagram_gradient.png") 30 round;
+}
+
+
+.image {
+    top: 34px;
+    right: 250px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    border: 4px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white), radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.image__src {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.upline-post {
+    height: 60px;
+}
+
+.post-avatar-size {
+    width: 85px;
+}
+
+.image-post {
+    left: 38px;
+    top: 31px;
+    right: 0px;
+    width: 45px;
+    height: 45px;
+    border: 3px solid transparent;
+}
+
+.image__src-post {
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+}
+
+.post-nickname {
+    font-weight: 600;
+    padding-top: 18px;
+    margin-left: -26px;
+}
+
+.post-image {
+    margin-left: -13px;
+    margin-right: -13px;
+}
+
+.post-like {
+    margin-top: 9px;
+}
+
+.post-message {
+    margin-top: 7px;
+}
+
+.post-svgs {
+    color: black;
+}
+
+.post-likes-count {
+    margin-top: 10px;
+}
+
+.post-description {
+    margin-top: -7px;
+}
+
+.post-margin-top, .profile-margin-top {
+    margin-top: 30px;
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+.profile-info-margin {
+    margin-top: 15px;
+}
+
+.profile-username {
+    font-size: 25px;
+}
+
+.profile-link-edit {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    border: 1px solid grey;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+
+.profile-edit-block, .profile-add-block {
+    margin-top: 8px;
+}
+
+.profile-description {
+    margin-top: -11px;
+}
+
+.profile-posts {
+    margin-top: 50px;
+}
+
+.profile-post-image {
+    margin-bottom: 20px;
+}
+
+.change-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.posts-nickname-link {
+    text-decoration: none;
+    color: black;
+}
+
+.posts-list {
+    margin-bottom: 100px;
+}
+
+.comments-block-title {
+    color: #8e8e8e;
+    margin-top: -22px;
+    font-size: 15px;
+}
+
+.comment-username {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.comment-text {
+    margin-top: -10px;
+}
+
+
+.menu {
+    height: 52px;
+}
+
+.menu-block {
+    height: 69px;
+    width: 100%;
+    background: #f3f3f3
+}
+
+.search-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.search-title {
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.search-form > .mb-3 > input {
+    width: 300px;
+    margin-top: 1px;
+}
+
+.search-button-accounts {
+    margin-bottom: 16px;
+    margin-left: 23px;
+}
+
+.searched-accounts {
+    text-decoration: none;
+    color: black;
+}
+
+
