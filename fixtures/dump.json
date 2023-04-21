@@ -1,0 +1,128 @@
+[
+{
+  "model": "posts.comment",
+  "pk": 1,
+  "fields": {
+    "author": 3,
+    "post": 3,
+    "text": "Отлично",
+    "is_deleted": false,
+    "created_at": "2023-04-20T15:31:15.095Z",
+    "updated_at": "2023-04-20T15:31:15.099Z"
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 2,
+  "fields": {
+    "author": 3,
+    "post": 4,
+    "text": "Красивый арт",
+    "is_deleted": false,
+    "created_at": "2023-04-20T15:31:34.259Z",
+    "updated_at": "2023-04-20T15:31:34.262Z"
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 3,
+  "fields": {
+    "author": 1,
+    "post": 6,
+    "text": "Сколько стоит?",
+    "is_deleted": false,
+    "created_at": "2023-04-20T15:32:11.874Z",
+    "updated_at": "2023-04-20T15:32:11.877Z"
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 4,
+  "fields": {
+    "author": 1,
+    "post": 7,
+    "text": "Куда мир катится",
+    "is_deleted": false,
+    "created_at": "2023-04-20T15:32:28.627Z",
+    "updated_at": "2023-04-20T15:32:28.629Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 3,
+  "fields": {
+    "description": "Разрешение 4000x3000",
+    "image": "post_images/606217.jpg",
+    "image_square": "post_images_square/606217.jpg",
+    "author": 2,
+    "is_deleted": true,
+    "created_at": "2023-04-20T15:25:01.403Z",
+    "updated_at": "2023-04-20T15:42:08.887Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 4,
+  "fields": {
+    "description": "Разрешение 4000x300",
+    "image": "post_images/lucy-cyberpunk-edgerunners-4k-wallpaper-uhdpaper.com-6911i.jpg",
+    "image_square": "post_images_square/lucy-cyberpunk-edgerunners-4k-wallpaper-uhdpaper.com-6911i.jpg",
+    "author": 1,
+    "is_deleted": true,
+    "created_at": "2023-04-20T15:25:40.896Z",
+    "updated_at": "2023-04-20T15:53:24.115Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 5,
+  "fields": {
+    "description": "Разрешение 2560х1760",
+    "image": "post_images/1237857.jpg",
+    "image_square": "post_images_square/1237857.jpg",
+    "author": 1,
+    "is_deleted": false,
+    "created_at": "2023-04-20T15:26:21.734Z",
+    "updated_at": "2023-04-20T15:26:22.406Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 6,
+  "fields": {
+    "description": "Fairlady",
+    "image": "post_images/d30250cs-960.jpg",
+    "image_square": "post_images_square/d30250cs-960.jpg",
+    "author": 3,
+    "is_deleted": false,
+    "created_at": "2023-04-20T15:30:20.969Z",
+    "updated_at": "2023-04-20T15:30:20.996Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 7,
+  "fields": {
+    "description": "Itashi",
+    "image": "post_images/wp9326700-itasha-wallpapers.jpg",
+    "image_square": "post_images_square/wp9326700-itasha-wallpapers.jpg",
+    "author": 3,
+    "is_deleted": true,
+    "created_at": "2023-04-20T15:30:39.189Z",
+    "updated_at": "2023-04-20T15:54:13.078Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 8,
+  "fields": {
+    "description": "Другая версия",
+    "image": "post_images/datsun-280z-1976.webp",
+    "image_square": "post_images_square/datsun-280z-1976.webp",
+    "author": 3,
+    "is_deleted": false,
+    "created_at": "2023-04-20T15:30:52.503Z",
+    "updated_at": "2023-04-20T15:30:52.581Z"
+  }
+}
+]

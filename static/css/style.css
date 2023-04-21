@@ -293,4 +293,7 @@
     color: black;
 }
 
-
+.button-like-post {
+    border: none;
+    background: none;
+}

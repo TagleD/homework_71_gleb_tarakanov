@@ -27,21 +27,24 @@
                         <div class="row">
                             <div class="col-1">
                                 {% if post.is_liked %}
-                                    <a href="{% url 'unlike_post' post.pk %}" class="post-svgs">
+                                    <button id="like_post" class="button-like-post"
+                                            value="{{ post.id }}"
+                                            data-post-status="false">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                              fill="currentColor" class="bi bi-heart-fill post-like" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
                                                   d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                                         </svg>
-                                    </a>
+                                    </button>
                                 {% else %}
-                                    <a href="{% url 'like_post' post.pk %}" class="post-svgs">
+                                    <button id="like_post" class="button-like-post" value="{{ post.id }}"
+                                            data-post-status="true">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                              fill="currentColor"
                                              class="bi bi-heart post-like" viewBox="0 0 16 16">
                                             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                                         </svg>
-                                    </a>
+                                    </button>
                                 {% endif %}
                             </div>
                             <div class="col-1">
@@ -55,7 +58,9 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="post-likes-count">{{ post.likes_number }} отметок "Нравится"</p>
+                                <p class="post-likes-count"><span
+                                        id="likes_count_{{ post.id }}">{{ post.likes_number }}</span> отметок
+                                    "Нравится"</p>
                             </div>
                         </div>
                         <div class="row">
@@ -70,4 +75,57 @@
             {% endfor %}
         </div>
     </div>
+
+    <script>
+        const likeButtons = document.querySelectorAll('.button-like-post');
+        likeButtons.forEach(button => button.addEventListener('click', async function () {
+                const postId = this.getAttribute('value');
+                const status = this.getAttribute('data-post-status');
+                console.log(status);
+                const svg = this.children[0];
+
+                if (status === 'true') {
+                    button.setAttribute('data-post-status', 'false');
+                    let xhr = new XMLHttpRequest();
+                    xhr.onload = function () {
+                        {#if (this.status === 401) {#}
+                        {##}
+                        if (this.status === 200) {
+                            let data = JSON.parse(this.response);
+                            const path = svg.children[0];
+                            path.classList.remove('bi-heart');
+                            path.classList.add('bi-heart-fill');
+                            path.setAttribute('d', 'M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z');
+                            const span = document.getElementById(`likes_count_${postId}`);
+                            const likes_count = span.innerText
+                            span.innerText = parseInt(likes_count) + 1;
+                        }
+                    }
+                    xhr.open('GET', `http://127.0.0.1:8000/api/posts/${postId}/like_post`);
+                    xhr.send();
+                } else {
+                    button.setAttribute('data-post-status', 'true');
+                    let xhr = new XMLHttpRequest();
+                    xhr.onload = function () {
+                        if (this.status === 200) {
+                            let data = JSON.parse(this.response);
+                            const path = svg.children[0];
+                            path.classList.remove('bi-heart-fill');
+                            path.classList.add('bi-heart');
+                            path.setAttribute('d', 'm8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z');
+                            const span = document.getElementById(`likes_count_${postId}`);
+                            const likes_count = span.innerText
+                            span.innerText = parseInt(likes_count) - 1
+                        }
+                    }
+                    xhr.open('GET', `http://127.0.0.1:8000/api/posts/${postId}/unlike_post`);
+                    console.log(postId)
+                    xhr.send();
+                }
+            }
+        ))
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 {% endblock %}

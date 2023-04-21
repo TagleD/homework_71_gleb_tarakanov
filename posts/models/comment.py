@@ -18,7 +18,7 @@ class Comment(models.Model):
         related_name='comments',
         null=False,
         blank=False,
-        on_delete=models.CASCADE
+        on_delete=models.RESTRICT
     )
     text = models.CharField(
         max_length=200,
