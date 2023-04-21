@@ -3,20 +3,20 @@
   "model": "accounts.account",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$390000$fcEbqy2wh89S9zEwHA09et$EK132HVDW6nhCGHRZfKTzddx2wvkApO8YoPvKcRwr08=",
-    "last_login": "2023-03-28T12:32:59.930Z",
+    "password": "pbkdf2_sha256$390000$bjZiTCOXzbdl5bfQvYfmPf$x2afIa6u+78Poxtf+2YS+mwcjqXnCaouaaKnZaWTPNg=",
+    "last_login": "2023-04-21T13:02:08.239Z",
     "is_superuser": false,
-    "username": "aida",
-    "first_name": "Аида",
+    "username": "anime_wallpapper",
+    "first_name": "Андрей",
     "last_name": "",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2023-03-24T05:58:45.830Z",
-    "email": "aida@aida.com",
-    "avatar": "user_pic/ul6g48eb0lfa1.jpg.webp",
-    "phone": "+77471487070",
-    "description": "A Django library which interfaces with python-phonenumbers to validate, pretty print and convert phone numbers. The python-phonenumbers library is a port of Google’s libphonenumber library, which powers Android’s phone number handling.",
-    "gender": "F",
+    "date_joined": "2023-04-20T15:22:33.485Z",
+    "email": "andrei@andrei.com",
+    "avatar": "user_pic/Снимок_экрана_2023-04-16_в_18.36.21.png",
+    "phone": "+77011118334",
+    "description": "Дед",
+    "gender": "M",
     "groups": [],
     "user_permissions": [],
     "liked_posts": [],
@@ -28,31 +28,26 @@
   "model": "accounts.account",
   "pk": 2,
   "fields": {
-    "password": "pbkdf2_sha256$390000$OvSThUL1hnCUWBiZyl798T$L92grkAcMDJX1uloPL7sxfwhB/g3P2aHt4JUuDC61cg=",
-    "last_login": "2023-03-28T12:33:57.161Z",
+    "password": "pbkdf2_sha256$390000$PREBgi403iqwIemjF1kpmc$2KBa+CoN0iNm8Z27nu9fhmHpnYW0bLuCmkDX/nrDfKo=",
+    "last_login": "2023-04-21T12:56:12.392Z",
     "is_superuser": false,
-    "username": "JDM_Cars",
-    "first_name": "arts",
+    "username": "aida",
+    "first_name": "Аида",
     "last_name": "",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2023-03-24T06:00:40.946Z",
-    "email": "jdm@jdm.com",
-    "avatar": "user_pic/wp9326700-itasha-wallpapers.jpg",
-    "phone": null,
-    "description": "Тоже мощный",
-    "gender": "M",
+    "date_joined": "2023-04-20T15:28:09.647Z",
+    "email": "aida@aida.com",
+    "avatar": "user_pic/pxfuel-5.jpg",
+    "phone": "+77471487070",
+    "description": "Мощная",
+    "gender": "F",
     "groups": [],
     "user_permissions": [],
     "liked_posts": [
-      19,
-      20
+      4
     ],
-    "subscriptions": [
-      [
-        "andrei@andrei.com"
-      ]
-    ],
+    "subscriptions": [],
     "commented_posts": []
   }
 },
@@ -60,30 +55,385 @@
   "model": "accounts.account",
   "pk": 3,
   "fields": {
-    "password": "pbkdf2_sha256$390000$eFzdKtKhVKhl9egFF7J1DL$DDYV6D4VxsiAojhj1MpPzHlWqMcCMkC/WRfG163S2+Y=",
-    "last_login": "2023-03-28T12:31:29.696Z",
+    "password": "pbkdf2_sha256$390000$rkMlANZ3P51PPIIJuulLX5$idvrRP1iC0iQlFRnksZB7KaNp+v978qNiCS/KVBlUoQ=",
+    "last_login": "2023-04-21T10:43:39.694Z",
     "is_superuser": false,
-    "username": "anime_wallpaper",
-    "first_name": "Андрей",
+    "username": "jdm_cars",
+    "first_name": "Тиша",
     "last_name": "",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2023-03-24T06:52:39.630Z",
-    "email": "andrei@andrei.com",
-    "avatar": "user_pic/Снимок_экрана_2023-03-08_в_15.59.23_DkSA2qy.png",
-    "phone": "+77011118334",
-    "description": "Дед",
-    "gender": "M",
+    "date_joined": "2023-04-20T15:30:03.159Z",
+    "email": "jdm@jdm.com",
+    "avatar": "user_pic/d30250cs-960.jpg",
+    "phone": "+77471487070",
+    "description": "Легендарные японские автомобили",
+    "gender": "N",
     "groups": [],
     "user_permissions": [],
-    "liked_posts": [
-      23,
-      20,
-      19,
-      18
-    ],
+    "liked_posts": [],
     "subscriptions": [],
     "commented_posts": []
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 6,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 6,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 6,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 6,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 7,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 7,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 7,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 7,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Профиль",
+    "content_type": 8,
+    "codename": "add_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Профиль",
+    "content_type": 8,
+    "codename": "change_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Профиль",
+    "content_type": 8,
+    "codename": "delete_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Профиль",
+    "content_type": 8,
+    "codename": "view_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Token",
+    "content_type": 9,
+    "codename": "add_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Token",
+    "content_type": 9,
+    "codename": "change_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Token",
+    "content_type": 9,
+    "codename": "delete_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Token",
+    "content_type": 9,
+    "codename": "view_token"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add token",
+    "content_type": 10,
+    "codename": "add_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change token",
+    "content_type": 10,
+    "codename": "change_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete token",
+    "content_type": 10,
+    "codename": "delete_tokenproxy"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view token",
+    "content_type": 10,
+    "codename": "view_tokenproxy"
   }
 }
 ]
